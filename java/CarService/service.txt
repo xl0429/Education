@@ -1,0 +1,10 @@
+P1001	[repair car lamp]	[100.0]	100.0
+P1002	[repair engine]	[100.0]	100.0
+P1003	[repair tyre]	[120.0]	120.0
+P1004	[repair engine]	[113.0]	113.0
+P1005	[paint car]	[166.0]	166.0
+P1006	[paint car]	[166.0]	166.0
+P1007	[wax car]	[138.0]	138.0
+P1008	[maintain car]	[100.0]	100.0
+P1009	[repair engine, repair car lamp]	[100.0, 100.0]	200.0
+P1010	[inspect car]	[147.0]	147.0
