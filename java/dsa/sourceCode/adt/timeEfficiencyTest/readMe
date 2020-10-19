@@ -1,0 +1,30 @@
+This folder contains all the algorithm with 
+main class in order for time efficiency checking
+
+A 10 times for loop is use to generate the time elapse of the algorithm except for 
+binary tree(do in manual as the dequeue is using which empty the entire queue)
+
+BinaryTree, Filter, Indexing are searching for 
+(firstName)Rosamund at position 85 index 84
+
+Time Efficiency counting for BinaryTree, Filter, Indexing use:
+start time  - start when searching for "Rosamund" from 
+             collection of students(already in list /queue)
+end time    - end when the searching end searching from the collection 
+elapse time = start time-end time
+
+Time Efficiency counting for Sorting use:
+start time  - start when add all student in the list
+end time    - end when student is sorted by their first name 
+elapse time = start time-end time
+
+Time Efficiency counting for Duplication Check use:
+start time  - start when checking the duplicate item from the collection 
+              of students(already in list)
+end time    - end when all duplicated students are removed
+elapse time = start time-end time
+
+    **Check duplicattion check**
+    in folder dsa_assignment.adt.DuplicationCheck -> ListInterface_duplicateCheck
+    comment   -> RemoveDuplicate(index);
+    uncomment -> remove(index);

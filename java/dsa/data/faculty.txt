@@ -1,0 +1,4 @@
+FOCS:Faculty of Computing and Information Technology
+FAFB:Faculty of Accountancy, Finance & Business
+FOET:Faculty of Engineering and Technology
+FOAS:Faculty of Applied Sciences

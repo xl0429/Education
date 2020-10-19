@@ -1,0 +1,4 @@
+FAFB:Accounting:Marketing
+FOAS:Food Science:Sport and Exercise Science
+FOCS:Information Security:Internet Technology:Software Engineering
+FOET:Mechanical Engineering,Electrical & Electronics Engineering:Mechatronics Engineering

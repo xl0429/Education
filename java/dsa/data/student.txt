@@ -1,0 +1,104 @@
+1808261971:1802663:Thurstan:Meyer:F:thurstan_meyer@student.edu.my:01928145487:71 Raven Point, 50050 Kuala Lumpur:FOAS:Sport and Exercise Science:5:0518
+1808261971:1800513:Joey:Yong:F:thurstan_meyer@student.edu.my:01928145487:71 North Pass, 42600 Selangor:FOCS:Information Security:6:1018
+589440945:1803745:Dinny:Gwioneth:M:dinny_gwioneth@student.edu.my:01836211461:00 North Pass, 10350 Pulau Penang:FOET:Mechanical Engineering:4:0518
+589440945:1803745:Dinny:Gwioneth:M:dinny_gwioneth@student.edu.my:01836211461:00 North Pass, 10350 Pulau Penang:FOET:Mechanical Engineering:4:0518
+1252178904:1814936:Ludovico:Caughan:M:ludovico_caughan@student.edu.my:0183528218:9214 Pierstorff Circle, 10350 Pulau Penang:FOET:Mechanical Engineering:4:1018
+2101982431:1815056:Carlye:Trunby:F:carlye_trunby@student.edu.my:0199608289:72275 Bartillon Alley, 10450 Pulau Penang:FAFB:Accounting:4:0518
+685334131:1815526:Aili:Boltwood:M:aili_boltwood@student.edu.my:0170547735:272 Esch Court, 10450 Pulau Penang:FOCS:Information Security:3:0518
+460151002:1816529:Denyse:Grafton:F:denyse_grafton-herbert@student.edu.my:01979507573:7521 Claremont Center, 50050 Kuala Lumpur:FAFB:Marketing:4:1018
+1163166945:1816568:Virgilio:Handke:M:virgilio_handke@student.edu.my:01976025484:9 Karstens Plaza, 51200 Kuala Lumpur:FAFB:Marketing:4:0518
+1163166945:1816568:Virgilio:Handke:M:virgilio_handke@student.edu.my:01976025484:9 Karstens Plaza, 51200 Kuala Lumpur:FAFB:Marketing:4:0518
+1956734968:1819384:Cam:Doree:F:cam_doree@student.edu.my:01707348511:77 Buena Vista Avenue, 80500 Johor:FOET:Mechanical Engineering:3:0518
+356582692:1819771:Opal:Cowpe:F:opal_cowpe@student.edu.my:0193791524:35251 Lakewood Trail, 34500 Perak:FOET:Mechanical Engineering:3:1018
+1735609166:1822192:Nerti:Cooch:M:nerti_cooch@student.edu.my:0181501905:1484 Fallview Place, 34300 Perak:FOET:Mechatronics Engineering:5:1018
+21694798:1822402:Rustie:Sinnett:F:rustie_sinnett@student.edu.my:0170290775:53150 Jana Point, 10450 Pulau Penang:FOET:Electrical & Electronics Engineering:5:0518
+2133936148:1826626:Consalve:Ryding:M:consalve_ryding@student.edu.my:0195118506:78 Continental Alley, 50050 Kuala Lumpur:FOAS:Sport and Exercise Science:5:1018
+1836028403:1830130:Roana:Purchase:M:roana_purchase@student.edu.my:0189429787:20 Calypso Street, 51200 Kuala Lumpur:FAFB:Marketing:2:0518
+325049984:1831329:Paolo:Kopec:M:paolo_kopec@student.edu.my:01787067224:2208 Claremont Trail, 81100 Johor:FOET:Electrical & Electronics Engineering:4:0518
+1173239444:1833730:Joyan:Braun:F:joyan_braun@student.edu.my:01904442076:5591 Macpherson Lane, 80100 Johor:FOCS:Information Security:3:1018
+856428978:1838987:Iolanthe:Lipprose:M:iolanthe_lipprose@student.edu.my:0192851444:11 Gateway Drive, 51200 Kuala Lumpur:FOET:Mechatronics Engineering:4:0518
+621019106:1841069:Olly:Ouver:M:olly_ouver@student.edu.my:01998751229:0650 Jana Point, 80500 Johor:FOET:Mechatronics Engineering:5:1018
+1265103725:1841371:Cathrine:Exposito:M:cathrine_exposito@student.edu.my:01783421448:6603 Pankratz Park, 34300 Perak:FOCS:Information Security:4:0518
+2125048797:1842271:Jack:Side:F:jack_side@student.edu.my:01836505217:7806 Mayer Drive, 51200 Kuala Lumpur:FAFB:Marketing:5:0518
+312723394:1843880:Janaye:Perillo:M:janaye_perillo@student.edu.my:01973715938:25 Morrow Way, 50050 Kuala Lumpur:FOET:Electrical & Electronics Engineering:5:1018
+692413335:1843961:Daniella:Mongeot:F:daniella_mongeot@student.edu.my:0191731270:6784 Lunder Center, 10450 Pulau Penang:FOAS:Food Science:5:1018
+1554883818:1843993:Dur:Spybey:M:dur_spybey@student.edu.my:01844862495:2808 Del Sol Circle, 43200 Perak:FAFB:Marketing:2:1018
+1846283469:1845239:Cynthia:Denham:M:cynthia_denham@student.edu.my:01930238835:63781 Waxwing Alley, 43200 Perak:FOET:Mechatronics Engineering:5:0518
+1639714368:1849895:Donall:Banham:M:donall_banham@student.edu.my:01962612107:306 Graceland Center, 80500 Johor:FOAS:Sport and Exercise Science:2:0518
+1627683437:1851158:Ahmad:Cove:F:ahmad_cove@student.edu.my:01694650393:98161 Jay Terrace, 32400 Perak:FOET:Mechanical Engineering:4:0518
+1360885096:1852321:Nathanil:O'Dempsey:F:nathanil_o'dempsey@student.edu.my:0197264612:61226 3rd Alley, 50050 Kuala Lumpur:FAFB:Accounting:2:1018
+1625645132:1852330:Francesco:Roke:M:francesco_roke@student.edu.my:01919917739:019 Lighthouse Bay Street, 50050 Kuala Lumpur:FAFB:Accounting:5:0518
+1580076246:1853136:Tammie:Bengough:F:tammie_bengough@student.edu.my:0197220729:811 Lindbergh Lane, 51200 Kuala Lumpur:FOAS:Sport and Exercise Science:3:1018
+491053525:1854079:Carlynne:Stain:M:carlynne_stain@student.edu.my:0191614665:1266 Texas Parkway, 10250 Pulau Penang:FOAS:Sport and Exercise Science:4:1018
+644127150:1855283:Caz:Oxbrough:M:caz_oxbrough@student.edu.my:01997877674:86327 Summit Street, 10250 Pulau Penang:FOET:Mechanical Engineering:3:1018
+1872043835:1856371:Ferdinanda:Goggins:F:ferdinanda_goggins@student.edu.my:0196396023:42932 7th Junction, 34300 Perak:FOAS:Sport and Exercise Science:5:0518
+1581791062:1857157:Felice:Exeter:F:felice_exeter@student.edu.my:01979069461:6328 Sunfield Circle, 10250 Pulau Penang:FAFB:Accounting:5:1018
+1725164342:1857451:Griffin:Aylmore:M:griffin_aylmore@student.edu.my:0194482134:84185 Dottie Way, 10450 Pulau Penang:FOCS:Software Engineering:2:1018
+1670685083:1857761:Daniel:Shinner:M:daniel_shinner@student.edu.my:0183564601:87887 Truax Junction, 10350 Pulau Penang:FOCS:Information Security:3:0518
+723084398:1858486:Ulrick:Davenport:M:ulrick_davenport@student.edu.my:01903457544:9315 Alpine Alley, 80100 Johor:FOET:Mechanical Engineering:4:0518
+895338406:1859781:Gian:Wakely:F:gian_wakely@student.edu.my:01978771267:6934 Arapahoe Trail, 50200 Kuala Lumpur:FAFB:Marketing:5:1018
+1304846073:1862773:Herb:Dallow:F:herb_dallow@student.edu.my:0172048079:92322 Surrey Alley, 80100 Johor:FOAS:Sport and Exercise Science:5:0518
+225544405:1865708:Evered:Guirardin:F:evered_guirardin@student.edu.my:01769236418:2 Rieder Drive, 10450 Pulau Penang:FOAS:Sport and Exercise Science:4:0518
+1878256442:1867309:Fonz:Fadell:M:fonz_fadell@student.edu.my:0154903439:680 Shopko Point, 50200 Kuala Lumpur:FOET:Mechatronics Engineering:5:0518
+929348275:1869546:Ash:MacVicar:F:ash_macvicar@student.edu.my:0198250633:8 Fairfield Center, 10450 Pulau Penang:FAFB:Accounting:2:1018
+1259484821:1871196:Jill:Upton:F:jill_upton@student.edu.my:01991806783:847 Weeping Birch Junction, 10350 Pulau Penang:FOCS:Software Engineering:5:1018
+1300119102:1873553:Bette-ann:Ilyunin:M:bette-ann_ilyunin@student.edu.my:0199578873:2 Brickson Park Avenue, 10250 Pulau Penang:FOAS:Sport and Exercise Science:2:1018
+1020381370:1875446:Lina:Hearne:F:lina_hearne@student.edu.my:0175104495:0316 Green Center, 32400 Perak:FAFB:Accounting:1:0518
+789461477:1879073:Lavinia:Gamon:M:lavinia_gamon@student.edu.my:01897734232:0411 Vera Center, 10250 Pulau Penang:FOAS:Sport and Exercise Science:3:0518
+1950419535:1880085:Mike:Grishaev:M:mike_grishaev@student.edu.my:0184684655:7633 John Wall Hill, 34500 Perak:FOAS:Sport and Exercise Science:4:1018
+1229426238:1883722:Leanna:Shepherd:F:leanna_shepherd@student.edu.my:0191612388:17997 Pawling Drive, 80100 Johor:FAFB:Accounting:2:1018
+2016457662:1884018:Adrian:Leyband:M:adrian_leyband@student.edu.my:01880159180:51 Village Green Junction, 50050 Kuala Lumpur:FOCS:Information Security:4:0518
+666998542:1885198:Willy:Johnston:M:willy_johnston@student.edu.my:01981503373:803 Continental Street, 51200 Kuala Lumpur:FOCS:Information Security:5:1018
+1414654423:1886755:Idalina:Burdekin:M:idalina_burdekin@student.edu.my:0192227253:34 Buena Vista Court, 10450 Pulau Penang:FOET:Mechanical Engineering:5:0518
+640080472:1897373:Roxanne:Snozzwell:F:roxanne_snozzwell@student.edu.my:0195705100:56618 Oneill Point, 51200 Kuala Lumpur:FOAS:Food Science:5:0518
+1510477497:1897859:Deanne:Regenhardt:M:deanne_regenhardt@student.edu.my:01929890415:64205 Stoughton Park, 10250 Pulau Penang:FOAS:Food Science:4:1018
+1995275146:1898132:Christin:Corringham:M:christin_corringham@student.edu.my:01600349290:38407 Dawn Junction, 34300 Perak:FOET:Mechatronics Engineering:3:1018
+746302289:1901372:Ramona:Filipputti:F:ramona_filipputti@student.edu.my:01985462530:0 Dayton Center, 80100 Johor:FAFB:Accounting:4:1019
+1072601537:1902546:Allan:Labrom:M:allan_labrom@student.edu.my:0170864279:70348 Melvin Terrace, 10350 Pulau Penang:FOCS:Information Security:5:0519
+1523564181:1902933:Durand:Huffer:F:durand_huffer@student.edu.my:01892532545:226 Gina Avenue, 32400 Perak:FOET:Electrical & Electronics Engineering:1:0519
+1175972106:1904309:Joelly:Ruppert:F:joelly_ruppert@student.edu.my:01667730399:28 Hooker Avenue, 51200 Kuala Lumpur:FOET:Electrical & Electronics Engineering:5:0519
+918231491:1905096:Jesse:Speenden:F:jesse_speenden@student.edu.my:01933423872:1 Maple Wood Center, 10250 Pulau Penang:FOET:Mechanical Engineering:4:0519
+2055290949:1905825:Mirella:Gladyer:M:mirella_gladyer@student.edu.my:01800909767:42692 Thompson Way, 34500 Perak:FOCS:Internet Technology:3:1019
+1554557070:1909714:Alfi:Tompion:F:alfi_tompion@student.edu.my:0190114375:9 Declaration Road, 10250 Pulau Penang:FOCS:Information Security:5:0519
+617911184:1913209:Karrie:Durdle:F:karrie_durdle@student.edu.my:0190141742:8498 Duke Way, 81100 Johor:FOET:Mechanical Engineering:5:1019
+1159200926:1914913:Kaiser:Cheesley:F:kaiser_cheesley@student.edu.my:0191640427:24 Tennyson Center, 43200 Perak:FOCS:Internet Technology:2:0519
+925868441:1915413:Gizela:Castro:F:gizela_castro@student.edu.my:01714005522:629 Roth Point, 80500 Johor:FOCS:Information Security:4:0519
+798165009:1915433:Vick:Christophle:M:vick_christophle@student.edu.my:0147106678:5120 Cottonwood Parkway, 81100 Johor:FOCS:Software Engineering:5:1019
+681852970:1917281:Leticia:Swindin:F:leticia_swindin@student.edu.my:01935568804:5979 American Terrace, 51200 Kuala Lumpur:FOET:Mechanical Engineering:2:0519
+1392848329:1918407:Ernaline:Coughan:F:ernaline_coughan@student.edu.my:0191181613:5 Sugar Circle, 81100 Johor:FOET:Mechanical Engineering:4:1019
+523439301:1918542:Kelcey:Renny:M:kelcey_renny@student.edu.my:0186993984:412 Graedel Avenue, 10350 Pulau Penang:FAFB:Accounting:5:0519
+664750728:1921208:Elsbeth:Griffitts:M:elsbeth_griffitts@student.edu.my:01725000253:27 Grim Park, 50200 Kuala Lumpur:FOCS:Internet Technology:3:0519
+804574274:1923880:Pavia:Walling:M:pavia_walling@student.edu.my:0181429580:35 Farwell Way, 81100 Johor:FAFB:Accounting:3:1019
+1421805173:1924851:June:Novic:M:june_novic@student.edu.my:01707894297:50171 Lotheville Drive, 80100 Johor:FOCS:Internet Technology:1:1019
+1555019761:1930237:Ruthann:Pendock:M:ruthann_pendock@student.edu.my:0193042761:57 Manufacturers Court, 34300 Perak:FOET:Mechatronics Engineering:3:1019
+41369241:1931981:Kipper:Phippard:M:kipper_phippard@student.edu.my:0188717652:2120 Helena Drive, 80100 Johor:FOCS:Software Engineering:5:0519
+149938172:1935951:Arlee:Boyle:F:arlee_boyle@student.edu.my:0175181134:5473 Derek Lane, 50050 Kuala Lumpur:FOAS:Sport and Exercise Science:4:0519
+713348782:1936638:Ferrell:Gudeman:F:ferrell_gudeman@student.edu.my:01943456965:07141 Burning Wood Terrace, 34500 Perak:FOAS:Food Science:5:0519
+168433258:1939237:Evanne:Royse:F:evanne_royse@student.edu.my:01919015542:0197 Roxbury Place, 43200 Perak:FAFB:Marketing:5:0519
+821281146:1939410:Ezra:Callum:F:ezra_callum@student.edu.my:01509288152:59 Warrior Plaza, 10450 Pulau Penang:FOCS:Information Security:4:1019
+1160471099:1939787:Wallas:Glabach:M:wallas_glabach@student.edu.my:0199284317:3240 Fisk Place, 81100 Johor:FOAS:Sport and Exercise Science:3:1019
+1247244192:1939883:Ernst:Reijmers:M:ernst_reijmers@student.edu.my:0161957019:06 Butterfield Way, 80100 Johor:FOCS:Software Engineering:3:1019
+258962767:1940606:Lia:Thundercliffe:M:lia_thundercliffe@student.edu.my:0194662424:23 Lindbergh Court, 32400 Perak:FOAS:Sport and Exercise Science:4:1019
+603753099:1942412:Godwin:Purchase:M:godwin_purchase@student.edu.my:0171524590:2088 Thompson Avenue, 51200 Kuala Lumpur:FOAS:Sport and Exercise Science:1:1019
+1067050384:1949318:Alleen:Fermer:M:alleen_fermer@student.edu.my:0172753998:0010 Raven Crossing, 50200 Kuala Lumpur:FOET:Mechanical Engineering:1:0519
+1325557546:1957943:Misty:Chasmoor:F:misty_chasmoor@student.edu.my:0195551441:311 Caliangt Lane, 34500 Perak:FOCS:Software Engineering:5:0519
+980557117:1960397:Rosamund:Maving:F:rosamund_maving@student.edu.my:01816403534:37247 Haas Junction, 10450 Pulau Penang:FOET:Electrical & Electronics Engineering:5:1019
+2061486032:1961355:Kristoforo:Drivers:M:kristoforo_drivers@student.edu.my:0177405088:04 Amoth Plaza, 10350 Pulau Penang:FAFB:Marketing:4:1019
+140445437:1961482:Domenico:Anstie:F:domenico_anstie@student.edu.my:01734408418:5484 Starling Lane, 51200 Kuala Lumpur:FOCS:Information Security:4:0519
+1450505696:1962991:Ollie:Elsley:F:ollie_elsley@student.edu.my:0192131644:44 Linden Trail, 81100 Johor:FOCS:Internet Technology:5:0519
+1670792422:1964687:Diane-marie:Climance:M:diane-marie_climance@student.edu.my:01853094392:1 Laurel Crossing, 34300 Perak:FAFB:Accounting:5:0519
+1706388157:1966155:Thaine:Tointon:M:thaine_tointon@student.edu.my:01979712073:152 Ohio Parkway, 80500 Johor:FOAS:Sport and Exercise Science:4:1019
+468131465:1968390:Lamond:Frankton:M:lamond_frankton@student.edu.my:0196928663:0874 Carberry Center, 50200 Kuala Lumpur:FOET:Mechanical Engineering:3:0519
+1804105262:1970831:Marylou:Folshom:M:marylou_folshom@student.edu.my:0180348378:649 Becker Terrace, 34500 Perak:FOET:Mechanical Engineering:4:1019
+951017808:1971646:Jillene:D'Aguanno:M:jillene_d'aguanno@student.edu.my:0162713041:84 Mayfield Trail, 80500 Johor:FOET:Mechanical Engineering:5:0519
+2001060208:1972765:Jessie:Taggert:F:jessie_taggert@student.edu.my:0198532106:6 Reindahl Alley, 50200 Kuala Lumpur:FAFB:Accounting:5:1019
+1528913083:1974154:Ardella:Laba:M:ardella_laba@student.edu.my:01787408485:596 Clemons Crossing, 51200 Kuala Lumpur:FOCS:Information Security:4:0519
+1927960722:1974703:Juliana:Anfusso:M:juliana_anfusso@student.edu.my:0189946960:5 Fordem Center, 43200 Perak:FAFB:Marketing:5:0519
+868703846:1979654:Patsy:Densumbe:F:patsy_densumbe@student.edu.my:01775994025:35926 Anhalt Court, 50050 Kuala Lumpur:FOCS:Software Engineering:5:0519
+1746583122:1980619:Elene:Weatherell:M:elene_weatherell@student.edu.my:01967785686:13 Farmco Court, 50050 Kuala Lumpur:FOET:Mechatronics Engineering:5:0519
+989120618:1981444:Aguie:Turnpenny:M:aguie_turnpenny@student.edu.my:01914177727:0 Anderson Lane, 10450 Pulau Penang:FAFB:Accounting:4:1019
+424069121:1989154:Rollo:Hryniewicki:M:rollo_hryniewicki@student.edu.my:01965006719:0915 Steensland Terrace, 50200 Kuala Lumpur:FAFB:Accounting:4:0519
+321011653:1991780:Oralle:Kingsland:F:oralle_kingsland@student.edu.my:0193677648:06420 Old Shore Lane, 81100 Johor:FOCS:Internet Technology:5:0519
+791463066:1993150:Jojo:Dunstone:M:jojo_dunstone@student.edu.my:01836097562:967 Nelson Pass, 81100 Johor:FOET:Electrical & Electronics Engineering:5:1019
+834610993:1998198:Cale:Gaul:F:cale_gaul@student.edu.my:01996641821:9184 Dixon Place, 43200 Perak:FOET:Mechanical Engineering:4:0519
+1388564196:2098199:asdf:qwer:F:asdf:adsf:adf:FOCS:Information Security:3:120
