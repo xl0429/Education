@@ -1,0 +1,468 @@
+body, input, button, select, textarea {
+    font: 11pt Calibri;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color:#f9fbff;
+    
+}
+
+header {
+    flex: 0 0 auto; 
+    display: flex;
+    background-color:#9ca8bf;
+    box-shadow: 0 0 5px #000;
+    padding: 10px 50px 5px 50px;
+    z-index: 1;
+    align-items: center;
+    
+}
+
+header > h1 {
+    flex: 1 1 auto;
+    display: flex;
+    margin: 0;
+    font-size: 28pt;
+    text-shadow: 0px 0px 1vw #ff0000, 0 0 .5vw	#FF7F50;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 25px;
+}
+
+header > div {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ #loginPhoto{
+    border-radius: 50%;
+    border: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin:0 15px 0 0;                                
+    float: left;
+    margin: -28px -30px -30px -42px;
+    padding: 18px;
+    
+}
+
+.navbar {
+    flex: 0 0 auto;
+    padding-left: 50px;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    float: left;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+/*category dropdown*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 15px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;  
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*category button up down error*/
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+#arrow{
+    display: inline;
+    padding-left: 6px;
+    position:relative;
+}
+
+.down {
+    margin: -2px 0 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.up {
+    margin: -2px 0;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+/*user dropdown*/
+.dbtn {
+    background-color: #666;
+    color: white;
+    padding: 12px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.ddown {
+    display: inline-block;
+    float: right;
+   
+}
+
+.ddown-content {
+    display: none;
+    position: absolute;
+    right: 50px;   
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 80px;
+}
+
+.ddown-content a {
+    min-width:70px;
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.ddown-content a:hover {background-color: #f1f1f1;}
+
+.show {display: block;}
+
+.ddown:hover .dbtn {
+    background-color: #838587;
+}
+
+
+
+main {
+    padding: 10px 50px;
+    flex: 1 1 auto;
+}
+
+main h2 {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #ccc;
+    box-shadow: 0 0 5px #000;
+    padding: 10px 50px;
+}
+
+/* CSS for form */
+.form {
+    display: table;
+    border-spacing: 5px;
+}
+
+.form > div {
+    display: table-row;
+}
+
+.form > div > * {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.form > div > label:first-child {
+    background-color: #ddd;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+
+label > * {
+    vertical-align: text-top;
+}
+
+/* CSS for messages */
+.errors {
+    list-style-position: inside;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px #000;
+    background-color: #c33;
+    color: #fff;
+}
+
+.error {
+    padding: 3px 5px;
+    color: #c33;
+    display:block;
+}
+
+.space{
+    height: 50px; 
+}
+
+.success:not(:empty) {
+    padding: 7px 20px;
+    box-shadow: 0 0 5px #000;
+    background-color: #393;
+    color: #fff;
+   
+}
+.info:not(:empty) {
+    padding: 7px 20px;
+    box-shadow: 0 0 5px #000;
+    background-color: #66f;
+    color: #fff;
+}
+
+.warning:not(:empty) {
+    padding: 7px 20px;
+    box-shadow: 0 0 5px #000;
+    background-color: #f90;
+    color: #fff;
+}
+
+.danger:not(:empty) {
+    padding: 7px 20px;
+    box-shadow: 0 0 5px #000;
+    background-color: #c33;
+    color: #fff;
+}
+
+.hide{
+    -moz-animation: hide 0s ease-in 3s forwards;
+    -webkit-animation: hide 0s ease-in 3s forwards;
+    -o-animation: hide 0s ease-in 3s forwards;
+    animation: hide 0s ease-in 3s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+   
+    
+}
+@keyframes hide {
+    to {
+        padding:0;
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes hide {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}   
+
+/* CSS for table */
+.table {
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #bbb;
+    padding: 3px 6px;
+}
+
+.table th {
+    background-color: #ccc;
+}
+
+.table tr:hover td {
+    background-color: #ddd;
+}
+
+.table a.ASC:after {
+    content: " ▲"; /* "\25b2" */
+}
+
+.table a.DESC:after {
+    content: " ▼"; /* "\25bc" */
+}
+
+/* CSS for pager */
+.pager a {
+    border: 1px solid #666;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1px 3px;
+    color: #000;
+}
+
+.pager a:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+/* Animated img */
+img.clickable {
+    cursor: pointer; 
+}
+
+img.clickable:hover {
+    /*animation: swing 0.1s linear 0s infinite alternate;*/
+    animation: move 1s infinite;
+    animation-direction: reverse;
+    position: relative;
+}
+
+@keyframes move{
+    0%   {left: 12px; right: 0px;}
+    100% { left: 0px; right: 5px;}
+}
+
+.inline {
+    display: inline;
+}
+
+/*password field*/
+#password, #confirm{
+    display:block;
+}
+
+#forget_Password{
+    display: block;
+    padding: 10px 10px 10px 0px;
+}
+
+/*input x icon*/
+.clearable-input {
+    position: relative;
+    display: inline-block;
+}
+.clearable-input > input {
+    padding-right: 1.4em;
+}
+.clearable-input:hover > [data-clear-input] {
+    display: block;
+}
+.clearable-input > [data-clear-input] {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 0 0.3em;
+    vertical-align:central;
+    cursor: pointer;
+}
+.clearable-input > input::-ms-clear{
+    display: none;
+}
+
+/*cart in header*/
+
+
+#cartImage{
+    width:30px;
+    height:20px;
+    margin:-5px;
+    padding:0 10px;
+}
+#countCart{
+    border-radius: 100%;
+    background-color: #d14900;
+    width:18px;
+    height:17px;
+    float: right;
+    margin: -10px 0px 0 -12px;
+  
+}
+
+/*textarea word count*/
+.textArea{
+    position: relative;
+    padding:5px;
+    height: 240px;
+}
+.countbox{
+    color:#525354; 
+    position:absolute;
+    right: 2%;
+    bottom: 6%;
+    background-color: #fff;
+}
+
+/*textarea scoller*/
+/* width */
+textarea::-webkit-scrollbar {
+    width: 2px;
+    
+}
+
+/* Track */
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+textarea::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+input:focus,  textarea:focus {
+    box-shadow: 0 0 3px #083070 !important;
+    -moz-box-shadow: 0 0 3px #083070 !important;
+    -webkit-box-shadow: 0 0 3px #083070 !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
