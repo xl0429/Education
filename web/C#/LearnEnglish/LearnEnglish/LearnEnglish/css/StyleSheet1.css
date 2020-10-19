@@ -1,0 +1,99 @@
+﻿
+.error {
+    color: red;
+    background-image: url('../Images/error.png');
+    background-repeat:no-repeat;
+    background-position:left center;
+    padding-left: 20px;
+}
+
+.table1 td {
+    padding: 5px;
+}
+
+.center{
+    text-align:center;
+}
+.visible {
+    display: none;
+}
+
+
+.gridview a:hover {
+    color: plum;
+}
+
+.header {
+    font-family: 'DejaVu Sans';
+    font-size: 45px;
+}
+
+.para {
+    font-family: 'Microsoft Sans Serif';
+    font-size: 18px;
+    font: bold;
+    color: darkviolet;
+}
+
+.gridview {
+    border-collapse: collapse;
+}
+
+    .gridview th,
+    .gridview td {
+        border: 1px solid #999;
+        padding: 10px;
+    }
+
+    .gridview th {
+        background-color: darksalmon;
+        color: #fff;
+    }
+
+        .gridview th a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+        }
+
+    .gridview .row {
+        height: 100px;
+    }
+
+        .gridview .row:hover {
+            background-color: antiquewhite;
+        }
+
+    .gridview .pager table td {
+        padding: 0px;
+    }
+
+    .gridview .pager span {
+        display: block;
+        padding: 2px 5px;
+        background-color: darksalmon;
+        color: #fff;
+    }
+
+.gridview .pager a {
+    display: block;
+    padding: 2px 5px;
+    color: #000;
+    text-decoration: none;
+}
+
+.gridview .pager a:hover {
+    background-color: antiquewhite;
+}
+
+.detailsView {
+    background-color: darksalmon;
+    border: 1px solid;
+    padding: 10px;
+}
+
+    .detailsView .desc {
+        width: 90%;
+        height: 500%;
+    }
+

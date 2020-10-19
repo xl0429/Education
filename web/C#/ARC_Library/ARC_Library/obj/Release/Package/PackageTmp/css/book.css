@@ -1,0 +1,31 @@
+﻿      .tbInsertBook {
+            padding:20px;
+            background-color:white;
+            width:50%;
+        }
+        .tbInsertBook td{
+            padding:10px;
+            min-width:200px;
+
+            border:1px solid black;
+        }
+       
+        .tbInsertBook tr:nth-child(odd){
+            background-color:aliceblue;
+        }
+        .tbInsertBook td:nth-child(1){
+            font-weight:bold;
+        }
+         .tbInsertBook td:nth-child(3){
+            border:none;
+            position:absolute;
+            background-color:unset;
+        }
+        .divInsertBook{
+            background-image: linear-gradient(#f9ffd1,#e4ffde);
+            padding:60px;
+            width:65%;
+            border-radius: 120px 20px;
+            border:5px dotted #003d0b;
+
+        }

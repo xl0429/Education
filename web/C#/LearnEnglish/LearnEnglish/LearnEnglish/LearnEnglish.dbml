@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="learnEnglish" Class="LearnEnglishDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\learnEnglish.mdf;Integrated Security=True" SettingsObjectName="LearnEnglish.Properties.Settings" SettingsPropertyName="learnEnglishConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="Username" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="HashPassword" Type="System.String" DbType="VarChar(44) NOT NULL" CanBeNull="false" />
+      <Column Name="Role" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Admin" Member="Admins">
+    <Type Name="Admin">
+      <Column Name="AdminName" Type="System.String" DbType="VarChar(25) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="HashPassword" Type="System.String" DbType="Char(44) NOT NULL" CanBeNull="false" />
+      <Association Name="Admin_Edition" Member="Editions" ThisKey="AdminName" OtherKey="AdminName" Type="Edition" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Topic" Member="Topics">
+    <Type Name="Topic">
+      <Column Name="TopicId" Type="System.String" DbType="Char(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TopicName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Topic_QuestionAnswer" Member="QuestionAnswers" ThisKey="TopicId" OtherKey="TopicId" Type="QuestionAnswer" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Country" Member="Countries">
+    <Type Name="Country">
+      <Column Name="CountryCode" Type="System.String" DbType="Char(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CountryName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Country_Member" Member="Members" ThisKey="CountryCode" OtherKey="CountryCode" Type="Member" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Edition" Member="Editions">
+    <Type Name="Edition">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="AdminName" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="GrammarCode" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="EditionType" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Admin_Edition" Member="Admin" ThisKey="AdminName" OtherKey="AdminName" Type="Admin" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GrammarLevel" Member="GrammarLevels">
+    <Type Name="GrammarLevel">
+      <Column Name="[Level]" Member="Level" Type="System.String" DbType="Char(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LevelName" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Association Name="GrammarLevel_GrammarType" Member="GrammarTypes" ThisKey="Level" OtherKey="Level" Type="GrammarType" />
+      <Association Name="GrammarLevel_Learning" Member="Learnings" ThisKey="Level" OtherKey="Level" Type="Learning" />
+      <Association Name="GrammarLevel_QuestionAnswer" Member="QuestionAnswers" ThisKey="Level" OtherKey="Level" Type="QuestionAnswer" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GrammarType" Member="GrammarTypes">
+    <Type Name="GrammarType">
+      <Column Name="GrammarCode" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Rating" Type="System.Decimal" DbType="Decimal(2,1)" CanBeNull="true" />
+      <Column Name="[Level]" Member="Level" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="RateCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="GrammarLevel_GrammarType" Member="GrammarLevel" ThisKey="Level" OtherKey="Level" Type="GrammarLevel" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Learning" Member="Learnings">
+    <Type Name="Learning">
+      <Column Name="Username" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="[Level]" Member="Level" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Association Name="GrammarLevel_Learning" Member="GrammarLevel" ThisKey="Level" OtherKey="Level" Type="GrammarLevel" IsForeignKey="true" />
+      <Association Name="Member_Learning" Member="Member" ThisKey="Username" OtherKey="Username" Type="Member" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoginInfo" Member="LoginInfos">
+    <Type Name="LoginInfo">
+      <Column Name="LoginId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Member" Member="Members">
+    <Type Name="Member">
+      <Column Name="Username" Type="System.String" DbType="VarChar(25) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="HashPassword" Type="System.String" DbType="VarChar(44)" CanBeNull="true" />
+      <Column Name="CountryCode" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="Member_Learning" Member="Learnings" ThisKey="Username" OtherKey="Username" Type="Learning" />
+      <Association Name="Country_Member" Member="Country" ThisKey="CountryCode" OtherKey="CountryCode" Type="Country" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QuestionAnswer" Member="QuestionAnswers">
+    <Type Name="QuestionAnswer">
+      <Column Name="QuesId" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Question" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="OptA" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="OptB" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="OptC" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="OptD" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Answer" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="TopicId" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="[Level]" Member="Level" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Association Name="GrammarLevel_QuestionAnswer" Member="GrammarLevel" ThisKey="Level" OtherKey="Level" Type="GrammarLevel" IsForeignKey="true" />
+      <Association Name="Topic_QuestionAnswer" Member="Topic" ThisKey="TopicId" OtherKey="TopicId" Type="Topic" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

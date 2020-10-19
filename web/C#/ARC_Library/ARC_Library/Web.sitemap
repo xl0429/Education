@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+<siteMapNode title="Home" url="Home.aspx">
+    <siteMapNode title="About" url="About.aspx" />
+    <siteMapNode title="Book List" url="BookList.aspx" />
+  
+    <siteMapNode title="Operation" roles="User_Staff,User_Admin" >
+      <siteMapNode title="Borrow" url="StaffPage/Borrow.aspx" />
+      <siteMapNode title="Return" url="StaffPage/Return.aspx" />
+      <siteMapNode title="Activation" url="StaffPage/Activation.aspx" />
+      <siteMapNode title="Loan List" url="StaffPage/StaffLoanList.aspx" />
+      <siteMapNode title="Staff Mgmt" roles="User_Admin" url="AdminPage/StaffMgmt.aspx" />
+    </siteMapNode>
+  
+    <siteMapNode title="Book" roles="User_Staff,User_Admin" >
+        <siteMapNode title="Insert Book" url="StaffPage/Book/InsertBook.aspx" />
+        <siteMapNode title="Update Book" url="StaffPage/Book/UpdateBook.aspx" />
+        <siteMapNode title="Delete Book" url="StaffPage/Book/DeleteBook.aspx" />
+        <siteMapNode title="Category" url="StaffPage/Category.aspx" />
+    </siteMapNode>
+  
+    <siteMapNode title="Report" roles="User_Admin" >
+      <siteMapNode title="Detail Report" url="AdminPage/Report/DetailReport.aspx" />
+      <siteMapNode title="Exception Report" url="AdminPage/Report/ExceptionReport.aspx" />
+      <siteMapNode title="Summary Report 1" url="AdminPage/Report/SummaryReport1.aspx" />
+      <siteMapNode title="Summary Report 2" url="AdminPage/Report/SummaryReport2.aspx" />
+    </siteMapNode>
+  <siteMapNode title="Transaction" roles="User_Member">
+    <siteMapNode title="Reservation" roles="User_Member" url="MemberPage/ReservationList.aspx" />
+    <siteMapNode title="Loan" roles="User_Member" url="MemberPage/LoanList.aspx" />
+  </siteMapNode>
+  
+    <siteMapNode title="Account" roles="User_Member,User_Staff,User_Admin" >
+      <siteMapNode title="Change Profile" roles="User_Member" url="MemberPage/ChangeProfile.aspx" />
+      <siteMapNode title="Reset Password" roles="User_Member,User_Staff,User_Admin" url="Account/ResetPassword.aspx" />
+    </siteMapNode>
+  
+  
+
+    <siteMapNode roles="" title="Register" url="/Account/Log.aspx?log=SignUp" />
+    <siteMapNode roles="" title="Login" url="/Account/Log.aspx?log=Login" />
+
+
+    <siteMapNode roles="User_Member,User_Admin,User_Staff" title="Logout" url="/account/Logout.aspx" />
+  </siteMapNode>
+</siteMap>

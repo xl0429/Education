@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15, 11.375" name="LearnEnglish">
+  <DataContextMoniker Name="/LearnEnglishDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f187d8c9-37ab-4e77-96c7-318aa19dc98f" absoluteBounds="12.75, 9.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LearnEnglishDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b746158-7cad-474f-a839-1690d3702038" absoluteBounds="12.765, 9.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a618bd5-fcbf-4094-ab28-60e9273a7260" absoluteBounds="7.75, 6.625, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/LearnEnglishDataContext/Admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cdb9046a-32ea-4ae3-94bb-a5200740c345" absoluteBounds="7.7650000000000006, 7.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="49529108-0ec5-4aee-afff-3db8364daa64" absoluteBounds="4.625, 8.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/LearnEnglishDataContext/Topic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2fe69a3-f740-4b64-b5e0-87fe000016db" absoluteBounds="4.6400000000000006, 8.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d9db0213-ebcb-4db0-b3d7-9e7f0c203b67" absoluteBounds="7.75, 2.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/LearnEnglishDataContext/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c70ba5a9-cffb-4e56-8af3-680cab637ff6" absoluteBounds="7.7650000000000006, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="63c6b943-4dd5-4d37-aaba-bf2b276613ec" absoluteBounds="7.75, 8.625, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/LearnEnglishDataContext/Edition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32f1008c-5877-4abc-a18f-5de0ac734f47" absoluteBounds="7.7650000000000006, 9.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55f5ae0e-99e5-40e2-8807-19b1d1923764" absoluteBounds="1.5, 5.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/LearnEnglishDataContext/GrammarLevel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1027d716-6690-4acd-99de-96cc8d7cef71" absoluteBounds="1.5150000000000001, 5.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="885d7d58-495a-4158-862a-d68857c7e4d7" absoluteBounds="4.5, 5.375, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/LearnEnglishDataContext/GrammarType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a41d41ec-5313-4a08-843a-a664b2829bee" absoluteBounds="4.515, 5.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f40fc40-186c-4175-84f4-a73e46e9a874" absoluteBounds="1.5, 2.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/LearnEnglishDataContext/Learning" />
+      <nestedChildShapes>
+        <elementListCompartment Id="711597a8-306e-4cc7-be0f-6dc004021e59" absoluteBounds="1.5149999999999997, 3.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34f571f7-567b-4c00-bb57-63cce4725afb" absoluteBounds="7.75, 4.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/LearnEnglishDataContext/LoginInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5de2f99b-b760-4505-93f9-663c3ed5b90e" absoluteBounds="7.7650000000000006, 5.0850000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2fb119d0-2b45-46a0-b97d-6728823ea7c5" absoluteBounds="4.5, 2.75, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/LearnEnglishDataContext/Member" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ed0eb18-c4f1-4897-a650-ac17a28597d9" absoluteBounds="4.5150000000000006, 3.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.75 : 8.0112939453125); (8.75 : 8.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LearnEnglishDataContext/Admin/Admin_Edition" />
+      <nodes>
+        <classShapeMoniker Id="5a618bd5-fcbf-4094-ab28-60e9273a7260" />
+        <classShapeMoniker Id="63c6b943-4dd5-4d37-aaba-bf2b276613ec" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 5.84699625651042); (4.5 : 5.84699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LearnEnglishDataContext/GrammarLevel/GrammarLevel_GrammarType" />
+      <nodes>
+        <classShapeMoniker Id="55f5ae0e-99e5-40e2-8807-19b1d1923764" />
+        <classShapeMoniker Id="885d7d58-495a-4158-862a-d68857c7e4d7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 5.125); (2.5 : 4.06899251302083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LearnEnglishDataContext/GrammarLevel/GrammarLevel_Learning" />
+      <nodes>
+        <classShapeMoniker Id="55f5ae0e-99e5-40e2-8807-19b1d1923764" />
+        <classShapeMoniker Id="6f40fc40-186c-4175-84f4-a73e46e9a874" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 3.47199625651042); (3.5 : 3.47199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LearnEnglishDataContext/Member/Member_Learning" />
+      <nodes>
+        <classShapeMoniker Id="2fb119d0-2b45-46a0-b97d-6728823ea7c5" />
+        <classShapeMoniker Id="6f40fc40-186c-4175-84f4-a73e46e9a874" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.75 : 3.34699625651042); (6.5 : 3.34699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LearnEnglishDataContext/Country/Country_Member" />
+      <nodes>
+        <classShapeMoniker Id="d9db0213-ebcb-4db0-b3d7-9e7f0c203b67" />
+        <classShapeMoniker Id="2fb119d0-2b45-46a0-b97d-6728823ea7c5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fac39e23-161c-4b80-af8c-208a31529634" absoluteBounds="1.625, 7.375, 2, 2.5401025390625">
+      <DataClassMoniker Name="/LearnEnglishDataContext/QuestionAnswer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3933a09a-97a5-40a6-9100-d0c63116cb04" absoluteBounds="1.6400000000000001, 7.8350000000000009, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5625 : 6.31899251302083); (2.5625 : 7.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LearnEnglishDataContext/GrammarLevel/GrammarLevel_QuestionAnswer" />
+      <nodes>
+        <classShapeMoniker Id="55f5ae0e-99e5-40e2-8807-19b1d1923764" />
+        <classShapeMoniker Id="fac39e23-161c-4b80-af8c-208a31529634" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.625 : 8.84699625651042); (3.625 : 8.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LearnEnglishDataContext/Topic/Topic_QuestionAnswer" />
+      <nodes>
+        <classShapeMoniker Id="49529108-0ec5-4aee-afff-3db8364daa64" />
+        <classShapeMoniker Id="fac39e23-161c-4b80-af8c-208a31529634" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home" url="Home.aspx">
+    <siteMapNode title="About" url="About.aspx" />
+    <siteMapNode title="Edition" roles="User_Admin" >
+        <siteMapNode title="Grammar" roles="User_Admin" url="AdminPage/Grammar/Grammar.aspx">
+          <siteMapNode title="Insert Grammar" url="AdminPage/Grammar/InsertGrammar.aspx" />
+          <siteMapNode title="Update Grammar" url="AdminPage/Grammar/UpdateGrammar.aspx" />
+          <siteMapNode title="Delete Grammar" url="AdminPage/Grammar/DeleteGrammar.aspx" />
+        </siteMapNode>
+        <siteMapNode title="Exercise" roles="User_Admin" url="AdminPage/Exercise/Exercise.aspx">
+          <siteMapNode title="Insert Exercise" url="AdminPage/Exercise/InsertExercise.aspx" />
+          <siteMapNode title="Update Exercise" url="AdminPage/Exercise/UpdateExercise.aspx" />
+          <siteMapNode title="Delete Exercise" url="AdminPage/Exercise/DeleteExercise.aspx" />
+          <siteMapNode title="Insert Topic" url="AdminPage/Exercise/InsertTopic.aspx" />
+        </siteMapNode>    
+    </siteMapNode>
+
+    <siteMapNode title="QR Code" roles="User_Admin" >
+        <siteMapNode title="QR Code" url="QRCode.aspx" />
+        <siteMapNode title="QR Code with Logo" url="QRLogo.aspx" />
+    </siteMapNode>
+    
+    <siteMapNode title="Report" roles="User_Admin" >
+        <siteMapNode title="Detail Report" url="AdminPage/Report/DetailReport.aspx" />
+        <siteMapNode title="Exception Report" url="AdminPage/Report/ExceptionReport.aspx" />
+        <siteMapNode title="Summary Report" url="AdminPage/Report/SummaryReport.aspx" />
+    </siteMapNode>
+
+    <siteMapNode title="Grammar" roles="*" url="GrammarList.aspx">
+      <siteMapNode title="Beginner" url="GrammarList.aspx?Level=l01" />
+      <siteMapNode title="Intermediate" url="GrammarList.aspx?Level=l02" />
+      <siteMapNode title="Advanced" url="GrammarList.aspx?Level=l03" />
+    </siteMapNode>
+
+    <siteMapNode title="Exercise" roles="User_Member,User_Google">
+      <siteMapNode title="Beginner" url="MemberPage/ViewExercise.aspx?Level=L01" roles="User_Member,User_Google" />
+      <siteMapNode title="Intermediate" url="MemberPage/ViewExercise.aspx?Level=L02" roles="User_Member,User_Google" />
+      <siteMapNode title="Advanced" url="MemberPage/ViewExercise.aspx?Level=L03" roles="User_Member,User_Google" />
+    </siteMapNode>
+    <siteMapNode title="Account" roles="User_Member">
+      <siteMapNode title="Change Profile" url="MemberPage/ChangeProfile.aspx" />
+      <siteMapNode title="Reset Password" url="MemberPage/ResetPassword.aspx" />
+    </siteMapNode>
+
+    <siteMapNode title="Q&amp;A" url="Chat/Chat.aspx" />
+
+
+    <siteMapNode title="Register" url="/Account/SignUp.aspx" />
+    <siteMapNode title="Login" url="/Account/Login.aspx" />
+    
+    
+  <siteMapNode title="Logout" url="/Account/Logout.aspx" />
+  </siteMapNode>
+</siteMap>

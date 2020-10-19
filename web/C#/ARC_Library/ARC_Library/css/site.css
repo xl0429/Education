@@ -1,0 +1,120 @@
+﻿.upper {
+    text-transform: uppercase;
+}
+
+.error {
+    color: red;
+    background-image: url('../img/error.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+}
+
+.imgBtnSearch {
+    height: 30px;
+    width: 30px;
+    background-color: #dddddd;
+    border: .5px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/**Gridview*/
+.gridview {
+    border-collapse: collapse;
+    margin-right: 1px;
+}
+
+    .gridview th,
+    .gridview td {
+        border: 1px solid #999;
+        padding: 5px;
+    }
+
+    .gridview th {
+        background-color: #14036c;
+        color: #fff;
+    }
+
+    .gridview th a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+
+     .gridview th a:hover {
+        color: #CCD;
+     }
+
+    .gridview tr:hover {
+        background-color: #f4f5ff;
+    }
+
+
+    .gridview .sort-asc a {
+        background-image: url('../img/Asc.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 20px;
+    }
+
+    .gridview .sort-desc a {
+        background-image: url('../img/Desc.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 20px;
+    }
+
+    .gridview .pager:hover {
+        background-color: transparent;
+    }
+
+    .gridview .pager span {
+        display: block;
+        padding: 2px 5px;
+        background-color: #14036c;
+        color: #fff;
+    }
+
+    .gridview .pager a {
+        display: block;
+        padding: 2px 5px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .gridview .pager a:hover {
+         background-color: #CCD;
+    }
+
+    .paddingtop{
+        padding-top:20px;
+    }
+
+
+    .caps {
+        display: none;
+        color: red
+    }
+
+/*password strength*/
+#password-strength-status {
+    color: #FFFFFF;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.medium-password {
+    background-color: #bcc400;
+    border: #BBB418 1px solid;
+}
+
+.weak-password {
+    background-color: #FF6600;
+    border: #AA4502 1px solid;
+}
+
+.strong-password {
+    background-color: #12CC1A;
+    border: #0FA015 1px solid;
+}

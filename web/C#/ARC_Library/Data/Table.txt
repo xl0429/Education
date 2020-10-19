@@ -1,0 +1,82 @@
+CREATE TABLE [dbo].[Admin] (
+    [AdminId]  CHAR (5)     NOT NULL,
+    [Username] VARCHAR (50) NOT NULL,
+    [Hash]     CHAR (44)    NOT NULL,
+    PRIMARY KEY CLUSTERED ([AdminId] ASC),
+    CONSTRAINT [AK_Admin_Username] UNIQUE NONCLUSTERED ([Username] ASC)
+);
+
+
+CREATE TABLE [dbo].[Member] (
+    [MemberId]  CHAR (5)     NOT NULL,
+    [Username]  VARCHAR (50) NOT NULL,
+    [Hash]      CHAR (44)    NULL,
+    [Email]     VARCHAR (50) NOT NULL,
+    [ContactNo] VARCHAR (12) NULL,
+    [Status]    VARCHAR (20) NOT NULL,
+    PRIMARY KEY CLUSTERED ([MemberId] ASC),
+    CONSTRAINT [AK_Member_Username] UNIQUE NONCLUSTERED ([Username] ASC)
+);
+
+
+CREATE TABLE [dbo].[Staff] (
+    [StaffId]   CHAR (5)     NOT NULL,
+    [Username]  VARCHAR (50) NOT NULL,
+    [Hash]      CHAR (44)    NOT NULL,
+    [Email]     VARCHAR (50) NOT NULL,
+    [ContactNo] VARCHAR (12) NOT NULL,
+    PRIMARY KEY CLUSTERED ([StaffId] ASC),
+    CONSTRAINT [AK_Staff_Username] UNIQUE NONCLUSTERED ([Username] ASC)
+);
+
+CREATE TABLE [dbo].[LoginInfo] (
+    [LoginId]  INT          IDENTITY (1, 1) NOT NULL,
+    [DateTime] DATETIME     NOT NULL,
+    [Username] VARCHAR (50) DEFAULT ((0)) NULL,
+    PRIMARY KEY CLUSTERED ([LoginId] ASC),
+    CONSTRAINT [FK_LoginInfo_Admin] FOREIGN KEY ([Username]) REFERENCES [dbo].[Admin] ([Username]) ON DELETE SET NULL ON UPDATE SET NULL,
+    CONSTRAINT [FK_LoginInfo_Member] FOREIGN KEY ([Username]) REFERENCES [dbo].[Member] ([Username]) ON DELETE SET NULL ON UPDATE SET NULL,
+    CONSTRAINT [FK_LoginInfo_Staff] FOREIGN KEY ([Username]) REFERENCES [dbo].[Staff] ([Username]) ON DELETE SET NULL ON UPDATE SET NULL
+);
+
+
+GO
+ALTER TABLE [dbo].[LoginInfo] NOCHECK CONSTRAINT [FK_LoginInfo_Admin];
+
+
+GO
+ALTER TABLE [dbo].[LoginInfo] NOCHECK CONSTRAINT [FK_LoginInfo_Member];
+
+
+GO
+ALTER TABLE [dbo].[LoginInfo] NOCHECK CONSTRAINT [FK_LoginInfo_Staff];
+
+
+
+CREATE TABLE [dbo].[Book] (
+    [BookId]       CHAR (6)       NOT NULL,
+    [Title]        VARCHAR (50)   NOT NULL,
+    [Author]       VARCHAR (50)   NULL,
+    [Price]        DECIMAL (6, 2) DEFAULT ((0.00)) NOT NULL,
+    [ISBN]         CHAR (13)      NOT NULL,
+    [Publisher]    VARCHAR (50)   NOT NULL,
+    [PublishYear]  INT            NULL,
+    [RegisterDate] DATE           NOT NULL,
+    [Image]        VARCHAR (100)  NULL,
+    [Status]       VARCHAR (20)   NOT NULL,
+    [CategoryId]   CHAR (3)       NULL,
+    PRIMARY KEY CLUSTERED ([BookId] ASC),
+    CONSTRAINT [FK_Book_Category] FOREIGN KEY ([CategoryId]) REFERENCES [dbo].[Category] ([CategoryId])
+);
+
+CREATE TABLE [dbo].[Reservation] (
+    [ReservationId]  CHAR (6) NOT NULL,
+    [ReserveDate]    DATETIME NOT NULL,
+    [ReserveDueDate] DATETIME NOT NULL,
+    [MemberId]       CHAR (5) NOT NULL,
+    [BookId]         CHAR (6) NOT NULL,
+    PRIMARY KEY CLUSTERED ([ReservationId] ASC),
+    CONSTRAINT [FK_Reservation_Member] FOREIGN KEY ([MemberId]) REFERENCES [dbo].[Member] ([MemberId]),
+    CONSTRAINT [FK_Reservation_Book] FOREIGN KEY ([BookId]) REFERENCES [dbo].[Book] ([BookId])
+);
+

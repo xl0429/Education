@@ -1,0 +1,36 @@
+INSERT INTO [dbo].[QuestionAnswer] ([QuesId], [Question], [OptA], [OptB], [OptC], [OptD], [Answer], [TopicId], [Level]) VALUES (N'Q01  ', N'Her hair is long and _', N'curly', N'happy', N'slim', N'late', N'A', N'T01', N'L01')
+INSERT INTO [dbo].[QuestionAnswer] ([QuesId], [Question], [OptA], [OptB], [OptC], [OptD], [Answer], [TopicId], [Level]) VALUES (N'Q02  ', N'Danny bought a new car. It''s very _', N'wild', N'shallow', N'tall', N'fast', N'D', N'T01', N'L01')
+INSERT INTO [dbo].[QuestionAnswer] ([QuesId], [Question], [OptA], [OptB], [OptC], [OptD], [Answer], [TopicId], [Level]) VALUES (N'Q03  ', N'Her new husband is very _', N'high', N'smart', N'urgent', N'relaxing', N'B', N'T01', N'L01')
+INSERT INTO [dbo].[QuestionAnswer] ([QuesId], [Question], [OptA], [OptB], [OptC], [OptD], [Answer], [TopicId], [Level]) VALUES (N'Q04  ', N'Tae care of this letter. It''s very _', N'urgent', N'round', N'blonde ', N'fresh', N'A', N'T01', N'L01')
+
+INSERT INTO [dbo].[QuestionAnswer] ([QuesId], [Question], [OptA], [OptB], [OptC], [OptD], [Answer], [TopicId], [Level]) VALUES (N'Q05  ', N'The eagle was _ than the bird', N'big', N'more big', N'bigger', N'biggest', N'C', N'T01', N'L02')
+INSERT INTO [dbo].[QuestionAnswer] ([QuesId], [Question], [OptA], [OptB], [OptC], [OptD], [Answer], [TopicId], [Level]) VALUES (N'Q06  ', N'Aryan was upset as he have _ coins', N'more', N'less', N'big', N'small', N'B', N'T01', N'L02')
+INSERT INTO [dbo].[QuestionAnswer] ([QuesId], [Question], [OptA], [OptB], [OptC], [OptD], [Answer], [TopicId], [Level]) VALUES (N'Q07  ', N'I am _ today means i did not come on time', N'puntual', N'late', N'high time', N'early', N'B', N'T01', N'L03')
+INSERT INTO [dbo].[QuestionAnswer] ([QuesId], [Question], [OptA], [OptB], [OptC], [OptD], [Answer], [TopicId], [Level]) VALUES (N'Q08  ', N'I feel really _ sorry as I was rude to you', N'sorry', N'happy', N'calm', N'sad', N'A', N'T01', N'L03')
+
+INSERT INTO [dbo].[Topic] ([TopicId], [TopicName]) VALUES (N'T01', N'Adjectives')
+INSERT INTO [dbo].[Topic] ([TopicId], [TopicName]) VALUES (N'T02', N'Nouns')
+
+CREATE TABLE [dbo].[Topic] (
+    [TopicId]   CHAR (3) NOT NULL,
+    [TopicName] VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([TopicId] ASC)
+);
+
+
+CREATE TABLE [dbo].[QuestionAnswer] (
+    [QuesId]       CHAR (5)  NOT NULL,
+    [Question]     VARCHAR (MAX) NOT NULL,
+    [OptA]         VARCHAR (10)  NOT NULL,
+    [OptB]         VARCHAR (10)  NOT NULL,
+    [OptC]         VARCHAR (10)  NOT NULL,
+    [OptD]         VARCHAR (10)  NOT NULL,
+    [Answer]       CHAR (1)  NOT NULL,
+    [TopicId] CHAR (3)  NOT NULL,
+    [Level]        CHAR (3)  NOT NULL,
+    PRIMARY KEY CLUSTERED ([QuesId] ASC),
+    CONSTRAINT [FK_QuestionAnswer_Topic] FOREIGN KEY ([TopicId]) REFERENCES [dbo].[Topic] ([TopicId]),
+	CONSTRAINT [FK_QuestionAnswer_GrammarLevel] FOREIGN KEY ([Level]) REFERENCES [dbo].[GrammarLevel] ([Level])
+
+);
+

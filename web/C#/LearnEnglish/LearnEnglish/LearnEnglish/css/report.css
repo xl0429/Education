@@ -1,0 +1,59 @@
+﻿
+
+.gridview {
+    border-collapse: collapse;
+}
+
+    .gridview th,
+    .gridview td {
+        border: 1px solid #999;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .gridview th {
+        background-color: #7da0ba;
+        color: #fff;
+    }
+
+        .gridview th a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+        }
+
+    .gridview .pager table td {
+        padding: 0;
+    }
+
+    .gridview .pager span {
+        display: block;
+        padding: 2px 5px;
+        background-color: #63b9a1;
+        color: #fff;
+    }
+
+    .gridview .pager a {
+        display: block;
+        padding: 2px 5px;
+        background-color: #fff;
+        text-decoration: none;
+    }
+
+        .gridview .pager a:hover {
+            background-color: #CCD;
+        }
+
+    .gridview .sort-asc {
+        background-image: url('../Images/Asc.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 20px;
+    }
+
+    .gridview .sort-desc {
+        background-image: url('../Images/Desc.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 20px;
+    }

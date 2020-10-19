@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LearnEnglish.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+   
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <script>
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+     <form runat="server">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <b><a class="navbar-brand" title="Back to home" href="../Home.aspx">LearnEnglish</a></b>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" 
+                aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                 <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" DynamicEnableDefaultPopOutImage="False"
+                     Orientation="Horizontal" SkipLinkText="" StaticDisplayLevels="2" StaticEnableDefaultPopOutImage="False"  
+                     CssClass="navbar-nav ml-auto nav-item menu" BackColor="black" DynamicHorizontalOffset="2"  
+                     ForeColor="white" RenderingMode="Table">
+                     <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                     <DynamicMenuItemStyle HorizontalPadding="14px" VerticalPadding="8px" ForeColor="White" />
+                     <DynamicMenuStyle BackColor="#A8BED9"  />
+                     <DynamicSelectedStyle BackColor="#507CD1" />
+                     <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                     <StaticMenuItemStyle HorizontalPadding="14px" VerticalPadding="8px" />
+                     <StaticSelectedStyle BackColor="#507CD1" />
+                     
+                 </asp:Menu>
+            </div>
+         </nav>
+         <div style="height:25px">
+            <div style="background-color: antiquewhite; display:block" align="center" class="loginView2">
+                <asp:LoginView ID="LoginView2" runat="server">
+                    <LoggedInTemplate>
+                        Welcome,<asp:LoginName ID="LoginName1" runat="server" Font-Bold="True" />
+                    </LoggedInTemplate>
+                </asp:LoginView>
+             </div>
+         </div>
+         <div class="container">
+             <div id="contain">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+             </div>
+         </div>
+        
+
+      <!-- /.container -->
+      </form>
+    <footer >
+        <table class="tbFooter">
+            <tr>
+                <td>
+                    <h6>STAY CONNECTED</h6>
+                    <p>Join to get tips and enhance your grammar.</p>
+                </td>
+            
+                <td>
+                    <h5>LearnEnglish</h5>
+                    <p>Contact Us<br />+6031-2149 8167</p>                   
+                </td>               
+                <td>
+                    <h6>Scan QR Code</h6>
+                    <img id="imgQrCode" src="../../QR/qrCode.jpg" />
+                    <style>
+                        #imgQrCode {
+                            width:120px;
+                            height:120px;
+                            padding:5px;
+                        }
+
+                    </style>
+                    <span style="position: absolute; right:20px; bottom: 0" >&copy; LearnEnglish</span>
+                </td>
+                
+            </tr>
+        </table>
+        </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+<style>
+.tbFooter{
+    width:100%;
+    position:absolute;
+    bottom:0%;
+}
+.tbFooter td{
+    width:33.3%;
+    background-color:black;
+    height: 130px;  
+    text-align:center;
+    color:white;
+    border: 0.5px solid white;
+}
+
+h6{
+    padding-top:10px;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  overflow-x:hidden;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  
+}
+#contain{
+    margin: 50px 0 150px;
+    z-index:1;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+
+}   
+.menu{
+
+    font-size:19px;
+    margin: 0;
+    height:auto;
+    vertical-align:central;
+    
+}
+.menu a:hover{
+    color:white;
+    text-decoration:none;
+}
+.container{
+    overflow-x:auto;
+}
+</style>

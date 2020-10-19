@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ARC_Library.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+   
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/masterpage.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+    html {
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        overflow-x: hidden;
+        position: relative;
+        margin: 0;
+        padding-bottom: 6rem;
+        min-height: 100%;
+        font-family: "Helvetica Neue", Arial, sans-serif !important;
+    }
+
+    #contain {
+        margin: 100px 0 150px;
+        z-index: 1;
+    }
+
+    .footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .menu{
+        font-size:19px;
+        margin: 0;
+        height:auto;
+        vertical-align:central;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    }
+    .menu a:hover{
+        color:white;
+        text-decoration:none;
+    }
+    </style>
+
+</head>
+<body>
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+  
+    <form runat="server" class="frm" id="frm">
+        <!--Start Nav-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary fixed-top">
+            <div class="container">
+                <b>
+                    <a class="navbar-brand" title="Back to home" href="../../../Home.aspx">
+                        <img src="../../img/favicon.png"  style="padding-right:7px; vertical-align:central;"/>ARC Library
+                    </a>
+                </b>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+          
+               <div class="collapse navbar-collapse" id="navbarResponsive">
+                     <asp:Menu ID="Menu1"  runat="server" DataSourceID="SiteMapDataSource1" DynamicEnableDefaultPopOutImage="False"
+                         Orientation="Horizontal" SkipLinkText="" StaticDisplayLevels="2" StaticEnableDefaultPopOutImage="False"  
+                         CssClass="navbar-nav ml-auto nav-item menu bg-secondary" BackColor="black" DynamicHorizontalOffset="2"  
+                         ForeColor="white" RenderingMode="Table">
+                         <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                         <DynamicMenuItemStyle HorizontalPadding="14px" VerticalPadding="8px" ForeColor="White" />
+                         <DynamicMenuStyle BackColor="#A8BED9"  />
+                         <DynamicSelectedStyle BackColor="#507CD1" />
+                         <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                         <StaticMenuItemStyle HorizontalPadding="14px" VerticalPadding="8px" />
+                         <StaticSelectedStyle BackColor="#507CD1" />
+                     </asp:Menu>
+                </div>
+            </div>
+        </nav>
+       <div style="padding-top:65px; height:25px">
+            <div style="background-color: #f0faf4; display:block" align="center" class="loginView2">
+                <asp:LoginView ID="LoginView2" runat="server">
+                    <LoggedInTemplate>
+                        Welcome,<asp:LoginName ID="LoginName1" runat="server" Font-Bold="True" />
+                    </LoggedInTemplate>
+                </asp:LoginView>
+             </div>
+         </div>
+        
+        <!--End Nav-->
+       
+        <!--Start Content-->
+        
+
+         <div class="container" align="center">
+             <div id="contain" >
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" ClientIDMode="Static">
+
+                </asp:ContentPlaceHolder>
+             </div>
+         </div>
+        <!--End Content-->
+    </form>
+    <!--Start Footer-->
+
+    <footer class="footer ">
+
+        <hr/>
+        <div class="container">
+            <table style="width:100%">
+                <tr>
+                    <td style="text-align:left"><b>&copy; ARC Library Reservation <script>document.write( " "+ new Date().getFullYear());</script>. All Rights Reserved.</b><br /><i style="font-weight:100">Contact us: +6012-345 6789</i>
+                    </td>
+                    <td style="text-align:right"><a href="#" >
+                    <i class="	fa fa-chevron-circle-up" style="font-size:40px;color:darkblue" title="back to top"></i>
+              </a></td>
+                    </tr>
+            </table>
+        </div>
+    </footer>
+     <!--End Footer-->
+</body>
+</html>
