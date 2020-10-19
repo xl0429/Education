@@ -1,0 +1,587 @@
+//Name : Tan Xin Li
+//Date : 2.8.2017
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<math.h>
+#pragma warning(disable : 4996)
+#define NO_QUES 8// total of question
+void menu();//type of arithmetic
+int choiceMenu();
+void level();//level of quiz
+int quitCorfirm();
+float performance(int);
+int addition();
+int begAddition();
+int intAddition();
+int advAddition();
+int subtraction();
+int begSubtraction();
+int intSubtraction();
+int advSubtraction();
+int multiplication();
+int begMultiplication();
+int intMultiplication();
+int advMultiplication();
+int main()
+ {
+	srand(time(NULL));//to generate different number in arithmetic question
+	printf("\n");
+	system("color 9");
+	printf("\t//=======================================================\\\\ \n");
+	printf("\t||%57s\n\t||%57s\n", "||", "||");
+	printf("\t||  M         M      A A      T T T T T T  H         H   || \n");
+	system("color A");
+	printf("\t||  M M     M M     A   A          T       H         H   ||\n");
+	system("color B");
+	printf("\t||  M  M   M  M    A A A A         T       H H H H H H   ||\n");
+	system("color C");
+	printf("\t||  M   M M   M   A       A        T       H         H   ||\n");
+	system("color D");
+	printf("\t||  M    M    M  A         A       T       H         H   ||\n");
+	printf("\t||%57s\n\t||%57s\n","||","||");
+	system("color E");
+	printf("\t||    Q Q Q      U         U  I I I I I I  Z Z Z Z Z Z   ||\n");
+	system("color D");
+	printf("\t||  Q       Q    U         U       I               Z     ||\n");
+	system("color F");
+	printf("\t||  Q   Q   Q    U         U       I            Z        ||\n");
+	system("color 1");
+	printf("\t||  Q     Q Q    U         U       I         Z           ||\n");
+	system("color	2");
+	printf("\t||    Q Q Q   Q    U U U U    I I I I I I  Z Z Z Z Z Z   ||\n");
+	system("color 7");
+	printf("\t||%57s\n\t||%57s\n", "||", "||");
+	printf("\t\\\\=======================================================// \n\n");
+	choiceMenu();
+	return 0;
+}
+void menu()//choose arithmetic question
+{
+	printf("\nMENU\n"
+		"---------------\n1. Addition Question\n"
+		"2. Substraction Question\n"
+		"3. Multiplication Question\n"
+		"4. Quit the Quiz \n\n"
+		"Your selection > ");
+}
+void level()//choose level for each arithmetic
+{
+	printf("\n\nLEVEL OF QUIZ\n-------------\n"
+		"1. Beginner\n"
+		"2. Intermediate\n"
+		"3. Advanced\n"
+		"4. Back to menu \n\n"
+		"Your selection > ");
+}
+int choiceMenu()
+{
+	menu();//perform menu
+	int responseType;
+	do {
+		scanf("%d", &responseType);
+		rewind(stdin);
+		switch (responseType) {
+		case 1:
+			addition();
+			break;
+		case 2:
+			subtraction();
+			break;
+		case 3:
+			multiplication();
+			break;
+		case 4:
+			system("cls");
+			quitCorfirm();
+			break;
+		default:
+			printf("\nInvalid response. Please enter 1 / 2 / 3 / 4\n\nYour selection > ");//prompt user when invalid response
+			continue;//loop when user give invalid response again
+		}
+		break;
+	} while (responseType != 4);//end loop when perform quitconfirm
+}
+int addition()
+{
+	system("cls");
+	int responseLevel;
+	level();//level in addition question
+	do {
+		scanf("%d", &responseLevel);//get user input
+		rewind(stdin);
+		switch (responseLevel) {
+		case 1:
+			system("cls");
+			begAddition();
+			break;
+		case 2:
+			system("cls");
+			intAddition();
+			break;
+		case 3:	
+			system("cls");
+			advAddition();
+			break;
+		case 4:
+			system("cls");
+			choiceMenu();
+			break;
+		default:
+			printf("\nInvalid response! Please enter 1 / 2 / 3 /4\n\nYour selection > "); // prompt user invalid response
+			continue;//loop when user give invalid response again
+		}
+		break;
+	} while (responseLevel != 4);
+}
+int begAddition()
+{
+	int i, score=0, num1, num2, userAnw, anw, b = 0;//get value from respNext
+	float percentage;//get from performance module
+	printf("\n\n    Addition (Beginner)\n+++++++++++++++++++++++++++\nAnswer the %d question below : \n\n", NO_QUES);
+	for (i = 1; i <= NO_QUES; i++)//loop questions
+	{
+		num1 = rand() % 10+ 1;//range 1 to 10
+		num2 = rand() % 10 + 1;//range 1 to 10
+		anw = num1 + num2;//actual anwser
+		printf("\t%d) %d + %d = ", i, num1, num2);//show question
+		scanf("%d", &userAnw);
+		rewind(stdin);
+		if (userAnw == anw) {
+			puts("\tYou're right!\n");
+			score++;//score +1 when userAnw correct
+		}
+		else {
+			printf("\tTry Hard!\n\tAns : %d \n\n", anw);//userAwn wrong , show correct answer
+		}
+	}	
+	percentage = performance(score);//pass value of score to performance module, perform performance,get percentage from performance module
+	if (percentage >= 70){
+		respNext(&b);//address value respNext to b
+		if (b != 2)
+			intAddition();
+		else
+			begAddition();
+	}
+	else
+		begAddition();
+	system("cls");
+}
+int intAddition()
+{
+	int i, score = 0, num1, num2, userAnw, anw, c = 0;//get value from respNext
+	float percentage;
+	printf("\n\n  Addition (Intermediate)\n+++++++++++++++++++++++++++\nAnswer the %d question below : \n\n", NO_QUES);
+	for (i = 1; i <= NO_QUES; i++)
+	{
+		num1 = rand() % 41 + 10;//range 10 to 50
+		num2 = rand() % 41 + 10;
+		anw = num1 + num2;
+		printf("\t%d) %d + %d = ", i, num1, num2);
+		scanf("%d", &userAnw);
+		rewind(stdin);
+		if (userAnw == anw) {
+			puts("\tYou're right!\n");
+			score++;
+		}
+		else 
+			printf("\tTry Hard!\n\tAns : %d\n\n", anw);
+	}
+	percentage = performance(score);
+	if (percentage >= 70){
+		respNext(&c);
+		if (c != 2)
+			advAddition();
+		else
+			intAddition();
+	}
+	else
+		intAddition();
+}
+int advAddition()
+{
+	int i, score = 0, num1, num2, userAnw, anw;
+	float percentage;
+	printf("\n\n    Addition (Advance)\n+++++++++++++++++++++++++++\nAnswer the %d question below : \n\n", NO_QUES);
+	for (i = 1; i <= NO_QUES; i++)
+	{
+		srand(time(NULL));
+		num1 = rand() % 51 + 50;//range 50 to 100
+		num2 = rand() % 51 + 50;
+		anw = num1 + num2;
+		printf("\t%d) %d + %d = ", i, num1, num2);
+		scanf("%d", &userAnw);
+		rewind(stdin);
+		if (userAnw == anw) {
+			puts("\tYou're right!\n");
+			score++;
+		}
+		else 
+			printf("\tTry Hard!\n\tAns : %d\n\n", anw);
+	}
+	percentage = performance(score);
+	if (percentage >= 70){
+		printf("\n*** Congratulation! You complete all level of addition question! ***\n");
+		while (respTryAgain())
+			advAddition();
+	}
+	else
+		advAddition();
+}
+int subtraction()
+{	
+	system("cls");
+	level();
+	int responseLevel;
+	do {
+		scanf("%d", &responseLevel);
+		rewind(stdin);
+		switch (responseLevel) {
+		case 1:
+			system("cls");
+			begSubtraction();
+			break;
+		case 2:
+			system("cls");
+			intSubtraction();
+			break;
+		case 3:
+			system("cls");
+			advSubtraction();
+			break;
+		case 4:
+			system("cls");
+			choiceMenu();
+			break;
+		default:
+			printf("\nInvalid response! Please enter 1 / 2 / 3 / 4\n\nYour selection > ");
+			continue;
+		}
+	} while (responseLevel != 4);
+}
+int begSubtraction()
+{
+	int i, score = 0, num1, num2, userAnw,d = 0, anw, anw2;//anw is anwser with negative sign ,anw2 is anwser without negative sign
+	float percentage;
+	printf("\n\n  Subtraction (Beginner)\n---------------------------\nAnswer the %d question below : \n\n", NO_QUES);
+	for (i = 1; i <= NO_QUES; i++)//loop questions
+	{
+		srand(time(NULL));
+		num1 = rand() % 10 + 1;//range is 1 to 10
+		num2 = rand() % 10 + 1;
+		anw = num1 - num2;
+		anw2 = abs(num1 - num2);//anwser without negative sign
+		printf("\t%d) %d - %d = ", i, num1, num2);
+		scanf("%d", &userAnw);
+		rewind(stdin);
+		if (userAnw == anw || userAnw == anw2) {
+			puts("\tYou're right!\n");
+			score++;
+		}
+		else {
+			printf("\tTry Hard!\n\tAns : %d\n\n", anw);
+		}
+	}
+	percentage = performance(score);
+	if (percentage >= 70)
+	{
+		respNext(&d);
+		if (d != 2)
+			intSubtraction();
+		else
+			begSubtraction();
+	}
+	else
+		begSubtraction();
+}
+int intSubtraction()
+{
+	int i, score = 0, num1, num2, userAnw, anw, anw2, a, e = 0;
+	float percentage;
+	printf("\n\n Subtraction (Intermediate)\n----------------------------\nAnswer the %d question below : \n\n", NO_QUES);
+	for (i = 1; i <= NO_QUES; i++)//loop questions
+	{
+		num1 = rand() % 41 + 10;//range 10 to 50
+		num2 = rand() % 41 + 10;
+		anw = num1 - num2;
+		anw2 = abs(num1 - num2);
+		printf("\t%d) %d - %d = ", i, num1, num2);
+		scanf("%d", &userAnw);
+		rewind(stdin);
+		if (userAnw == anw || userAnw == anw2) {
+			puts("\tYou're right!\n");
+			score++;
+		}
+		else 
+			printf("\tTry Hard!\n\tAns : %d\n\n", anw);
+	}
+	percentage = performance(score);//pass value of score to performance module, perform performance,get percentage from performance module
+	if (percentage >= 70){
+		respNext(&e);
+		if (e != 2)
+			advSubtraction();
+		else
+			intSubtraction();
+	}
+	else
+		intSubtraction();
+}
+int advSubtraction()
+{
+	int i, score = 0, num1, num2, userAnw, anw, anw2;
+	float percentage;
+	printf("\n\n   Subtraction (Advance)\n---------------------------\nAnswer the %d question below : \n\n", NO_QUES);
+	for (i = 1; i <= NO_QUES; i++)//loop questions
+	{
+		num1 = rand() % 51 + 50;//range 50 to 100
+		num2 = rand() % 51 + 50;
+		anw = num1 - num2;
+		anw2 = abs(num1 - num2);
+		printf("\t%d) %d - %d = ", i, num1, num2);
+		scanf("%d", &userAnw);
+		rewind(stdin);
+		if (userAnw == anw || userAnw == anw2) {
+			puts("\tYou're right!\n");
+			score++;
+		}
+		else 
+			printf("\tTry Hard!\n\tAns : %d\n\n", anw);
+	}
+	percentage = performance(score);
+	if (percentage >= 70){
+		printf("\n*** Congratulation! You complete all level of subtraction question! ***\n");
+		while (respTryAgain())
+			advSubtraction();
+	}
+	else
+		advSubtraction();
+}
+int multiplication()
+{
+	system("cls");
+	level();
+	int responseLevel;
+	do {
+		scanf("%d", &responseLevel);
+		rewind(stdin);
+		switch (responseLevel) {
+		case 1:
+			system("cls");
+			begMultiplication();
+			break;
+		case 2:
+			system("cls");
+			intMultiplication();
+			break;
+		case 3:
+			system("cls");
+			advMultiplication();
+			break;
+		case 4:
+			system("cls");
+			choiceMenu();
+			break;
+		default:
+			printf("\nInvalid response. Please enter 1 / 2 / 3 / 4\n\nYour selection > ");
+			continue;
+		}
+	} while (responseLevel != 4);
+}
+int begMultiplication()
+{
+	int i, score = 0, num1, num2, userAnw, anw, f = 0;//get value from respNext
+	float percentage;
+	printf("\n\n Multiplication (Beginner)\nxxxxxxxxxxxxxxxxxxxxxxxxxxx\n"
+			"Answer the %d question below : \n\n", NO_QUES);
+	for (i = 1; i <= NO_QUES; i++)
+	{
+		srand(time(NULL));
+		num1 = rand() % 10 + 1;//range is 1 to 10
+		num2 = rand() % 10;//range is 0 to 10
+		anw = num1 * num2;
+		printf("\t%d) %d X %d = ", i, num1, num2);
+		scanf("%d", &userAnw);
+		rewind(stdin);
+		if (userAnw == anw) {
+			puts("\tYou're right!\n");
+			score++;
+		}
+		else 
+			printf("\tTry Hard!\n\tAns : %d\n\n", anw);
+	}
+	percentage = performance(score);
+	if (percentage >= 70){
+		respNext(&f);
+		if (f != 2)
+			intMultiplication();
+		else
+			begMultiplication();
+	}
+	else
+		begMultiplication();
+}
+int intMultiplication()
+{
+	int i, score = 0, num1, num2, userAnw, anw;
+	int g = 0;//get value from respNext
+	float percentage;
+	printf("\n\nMultiplication (Intermediate)\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\nAnswer the %d question below : \n\n", NO_QUES);
+	for (i = 1; i <= NO_QUES; i++)
+	{
+		num1 = rand() % 11 + 10;//range is 10 to 20
+		num2 = rand() % 10 + 1;//range is 1 to 10
+		anw = num1 * num2;
+		printf("\t%d) %d X %d = ", i, num1, num2);
+		scanf("%d", &userAnw);
+		rewind(stdin);
+		if (userAnw == anw) {
+			puts("\tYou're right!\n");
+			score++;
+		}
+		else 
+			printf("\tTry Hard!\n\tAns : %d\n\n", anw);
+	}
+	percentage = performance(score);
+	if (percentage >= 70)
+	{
+		respNext(&g);
+		if (g != 2)
+			advMultiplication();
+		else
+			intMultiplication();
+	}
+	else
+		intMultiplication();
+}
+int advMultiplication()
+{
+	int i, score = 0, num1, num2, userAnw, anw;
+	float percentage;
+	printf("\n\n  Multiplication (Advance)\nxxxxxxxxxxxxxxxxxxxxxxxxxxxx\nAnswer the %d question below : \n\n", NO_QUES);
+	for (i = 1; i <= NO_QUES; i++)
+	{
+		num1 = rand() % 31 + 20;//range is 20 to 50
+		num2 = rand() % 11 + 10;//range is 10 to 20
+		anw = num1 * num2;
+		printf("\t%d) %d X %d = ", i, num1, num2);
+		scanf("%d", &userAnw);
+		rewind(stdin);
+		if (userAnw == anw) {
+			puts("\tYou're right!\n");
+			score++;
+		}
+		else 
+			printf("\tTry Hard!\n\tAns : %d\n\n", anw);
+	}
+	percentage = performance(score);
+	if (percentage >= 70){
+		printf("\n*** Congratulation! You complete all level of multiplication question! ***\n");
+		while (respTryAgain())
+			advMultiplication();
+	}
+	else
+		advMultiplication();
+}
+int quitCorfirm()
+{
+	int confirm;
+	printf("\nDo you sure want quit the quiz? \n1.Yes\n2.No\n\nYour selection > ");
+	do {
+		scanf("%d", &confirm);
+		rewind(stdin);
+		switch (confirm)
+		{
+		case 1:
+			printf("\nThank you for participation!\n");
+			system("pause");
+			exit(0);
+			break;
+		case 2:
+			system("cls");
+			choiceMenu();
+			break;
+		default:
+			printf("Invalid response! Please reenter your selection 1 / 2\n\nYour selection > ");
+			continue;
+		}
+	} while (confirm != 1);
+}
+float performance(int score)//get score from each arithmetic
+{
+	float percentage;
+	percentage = (float)score / (float)NO_QUES * 100;
+	printf("\n------------- RESULT ----------------\n");
+	printf("Your score is %d out of %d\nYour mark is %.2f %%\n\n", score, NO_QUES, percentage);
+	if (percentage >= 70)
+	{
+		printf("........ You are excellent! .........\n");
+	}
+	else if (percentage <= 50) {
+		printf("....... You need improvement! .......\n");
+		respTryAgain();
+	}
+	else {
+		printf("........... Good Trying! ............\n");
+		respTryAgain();
+	}
+	return percentage;
+}
+int respNext(int *a)//respNext is response try next level, pass value to pointer a
+{
+	int respNext;
+	printf("\nDo you want try next level ?\n1. Yes\n2. No\n"
+			"3. Back to menu\n4. Quit this quiz...\n\nYour selection > ");
+	do {
+		scanf("%d", &respNext);
+		rewind(stdin);
+		switch (respNext)
+		{
+		case 1://continue back to each arithmetic module
+			system("cls");
+			break;
+		case 2:
+			respTryAgain();
+			break;
+		case 3:
+			system("cls");
+			choiceMenu();
+			break;
+		case 4:
+			system("cls");
+			quitCorfirm();
+			break;
+		default:
+			printf("\nInvalid response! Please enter 1 / 2 / 3 / 4\n\nYour selection > ");
+			continue;
+		}
+		break;
+	} while (respNext != 4);
+	*a = respNext;
+}
+int respTryAgain()//resTryAgain is response try the same level again
+{
+	int respTryAgain;
+	printf("\nDo you want to try this level again ? \n"
+		"1. Yes\n2. Back to menu\n3. Quit the quiz\n\nYour selection > ");
+	do {
+		scanf("%d", &respTryAgain);
+		rewind(stdin);
+		switch (respTryAgain) {
+		case 1://continue back to each arithmetic module
+			system("cls");
+			break;
+		case 2:
+			system("cls");
+			choiceMenu();
+			break;
+		case 3:
+			system("cls");
+			quitCorfirm();
+			break;
+		default:
+			printf("\nInvalid response! Please enter 1 / 2 / 3 \n\nYour selection > ");
+			continue;//loop when invalid response
+		}
+		break;
+	} while (respTryAgain != 3);
+}
